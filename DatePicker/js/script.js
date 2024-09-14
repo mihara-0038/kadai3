@@ -32,4 +32,5 @@ $(function () {
       $("#reservation-error").text("予約日は必須項目です。");
     }
   });
+  $('#datepicker').datepicker();
 });
