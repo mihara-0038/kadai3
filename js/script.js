@@ -26,10 +26,15 @@ $(function () {
       $("#tel-error").text("電話番号は必須項目です。");
     }
 
-    // 予約日が未入力の場合
-    if ($('input[name="your-reservation"]').val() == "") {
-      // エラーメッセージをセット
-      $("#reservation-error").text("予約日は必須項目です。");
-    }
   });
-});
+    //ラジオボタン選択後の表記
+    $('[name="radio-check"]:radio').change(function(){
+      if($('[id=online-check]').prop('checked')){
+        $('.visitor').fadeOut();
+        $('.online').fadeIn();
+      }else if ($('[id=visitor-check]').prop('checked')){
+        $('.online').fadeOut();
+        $('.visitor').fadeIn();
+      }
+    })
+  });

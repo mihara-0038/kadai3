@@ -52,6 +52,10 @@ body {
 .button-area {
   text-align: center;
 }
+.check{
+  display: block;
+  padding: 2px;
+}
 #submit-button {
   background-color: #e85c4e;
   border-radius: 5px;
@@ -75,6 +79,23 @@ body {
 #reservation {
   max-width: 200px;
 }
+
+/*ラジオボタン部分*/
+.online{
+  display: block;
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+.visitor{
+  display: none;
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+
+li{
+  list-style: none;
+}
+
 /* エラーメッセージ用 */
 .error-text {
   color: #de3f2e;

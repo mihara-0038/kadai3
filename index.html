@@ -44,7 +44,24 @@
             <input type="text" /> 13時 ～ 14時
             <p id="reservation-error" class="error-text"></p>
           </dd>
+          <dt class="radio-button"><label for="addendance">受講形式</label><span>必須</span></dt>
+          <dd>
+            <label class="check"><input type="radio" name="radio-check" id="online-check" checked>オンラインで受講</label>
+            <label class="check"><input type="radio" name="radio-check" id="visitor-check">会場で受講</label>
+          </dd>
         </dl>
+        <div class="online">
+          <p>当日はオンライン会議システムを使用いたします。<br>
+            ご受講にあたり、端末とネットワーク環境が必要になりますのでご準備をお願いいたします。<br>
+            参加方法については、前日までに別途ご案内を差し上げます。
+          </p>
+        </div>
+        <div class="visitor">
+          <p>【会場情報】</p>
+          <li>会場：代々木プラザ３F　Room1</li>
+          <li>住所：〒151-0053 東京都渋谷区代々木1-1-1</li>
+          <li>電話番号：00-0000-0000</li>
+        </div>
 
         <div class="button-area">
           <button id="submit-button" type="button" value="">
